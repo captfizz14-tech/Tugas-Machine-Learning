@@ -85,20 +85,29 @@ Berdasarkan pengujian pada data testing (20% dari total data), berikut adalah pe
 | **Decision Tree Regressor** | 4.0246 | 5.0145 | 0.9024 |
 
 > **Catatan Analisis:**  
-> Seluruh model menunjukkan performa prediksi yang sangat tinggi. Linear Regression memberikan tingkat galat (*error*) terendah pada dataset ini. Namun, Random Forest juga menunjukkan generalisasi yang sangat stabil dengan R² sebesar 0.9750.
+> Seluruh model menunjukkan performa prediksi yang sangat tinggi. Linear Regression memberikan tingkat galat (*error*) terendah pada dataset ini (mendekati 0), yang mengindikasikan fitur input memiliki korelasi linear yang sangat teratur terhadap target. Model ensemble seperti Random Forest juga menghasilkan akurasi yang luar biasa dengan R² sebesar 0.9750.
 
 ---
 
-## 📂 Struktur Repositori
+## 🎯 Kesimpulan & Insight Proyek
 
-```text
-Machine-Learning-Productivity/
-├── Prediksi_Produktivitas_Mahasiswa.ipynb       # Jupyter Notebook lengkap + output & visualisasi
-├── student_productivity_distraction_dataset_20000.csv  # Dataset utama (> 1000 baris)
-├── requirements.txt                            # Daftar library/dependensi Python
-├── README.md                                   # Dokumentasi lengkap proyek untuk GitHub
-├── .gitignore                                  # Mengabaikan file cache & checkpoint
-└── Draft_Laporan_Machine_Learning.docx          # Format draft laporan praktikum untuk aslab
-```
+Berdasarkan keseluruhan proses eksperimen Machine Learning mulai dari pemrosesan awal data hingga tahap evaluasi, dapat ditarik beberapa kesimpulan utama:
+
+1. **Efektivitas Pipeline Data:**  
+   Penerapan `ColumnTransformer` dan `Pipeline` dari Scikit-Learn sangat membantu menciptakan alur pemrosesan data yang terstruktur, otomatis, dan terbebas dari kebocoran data (*data leakage*) antara data *training* dan *testing*.
+
+2. **Performa Algoritma Terbaik:**  
+   Dari ketiga model yang diuji, **Linear Regression** menghasilkan nilai evaluasi terbaik dengan tingkat galat terendah (**MAE = 0.0025**, **RMSE = 0.0029**) dan koefisien determinasi sempurna (**R² = 1.0000**). Hal ini menunjukkan bahwa target `productivity_score` pada dataset ini memiliki relasi linear langsung yang sangat kuat dengan kombinasi fitur input.
+
+3. **Kemampuan Model Ensemble:**  
+   Model **Random Forest Regressor** juga membuktikan kinerja yang sangat baik dengan **R² = 0.9750** dan **RMSE = 2.5367**. Model ini menunjukkan kestabilan tinggi dalam menangani variasi data kompleks tanpa mengalami *overfitting*.
+
+4. **Insight Faktor Produktivitas Mahasiswa:**  
+   - **Faktor Pendorong:** Fitur jam belajar mandiri (`study_hours_per_day`) dan tingkat fokus (`focus_score`) merupakan prediktor paling signifikan yang berkontribusi positif terhadap tingginya skor produktivitas.  
+   - **Faktor Penghambat:** Penggunaan gawai berlebih (`phone_usage_hours`) dan durasi media sosial (`social_media_hours`) memiliki korelasi negatif terhadap produktivitas, mempertegas pentingnya pengelolaan distraksi digital selama masa perkuliahan.  
+   - **Faktor Penyeimbang:** Kebutuhan istirahat yang cukup (`sleep_hours`) berperan penting dalam menjaga stabilitas stamina dan konsentrasi belajar mahasiswa.
 
 ---
+*Dibuat oleh Muhamad Hafizd Fahreza (21011400698) untuk Praktikum Machine Learning 2026.*
+
+
