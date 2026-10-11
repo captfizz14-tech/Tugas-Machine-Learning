@@ -13,6 +13,7 @@ Proyek ini disusun untuk memenuhi tugas praktikum mata kuliah **Machine Learning
 
 ## 👤 Identitas Praktikan
 * **Nama** : Muhamad Hafizd Fahreza
+* **Nim**  : 21011400698
 * **Mata Kuliah** : Machine Learning
 * **Dosen Pengampu** : Asep Erlan Maulana S.kom.,M.kom
 
@@ -101,52 +102,3 @@ Machine-Learning-Productivity/
 ```
 
 ---
-
-## 🚀 Cara Menjalankan di Lokal
-
-### 1. Clone Repositori
-```bash
-git clone https://github.com/<username-kamu>/Machine-Learning-Productivity.git
-cd Machine-Learning-Productivity
-```
-
-### 2. Buat & Aktifkan Virtual Environment (Opsional)
-```bash
-python -m venv venv
-# Windows:
-venv\Scripts\activate
-# Linux/macOS:
-source venv/bin/activate
-```
-
-### 3. Install Dependensi
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Jalankan Jupyter Notebook
-```bash
-jupyter notebook
-```
-Buka file `Prediksi_Produktivitas_Mahasiswa.ipynb` dan jalankan setiap *cell* secara berurutan (*Run All*).
-
----
-
-## 📤 Panduan Upload / Push ke GitHub
-
-Untuk mengunggah proyek ini ke repositori GitHub pribadi:
-
-1. Buka [GitHub](https://github.com/) dan buat repositori baru (misal: `machine-learning-productivity`).
-2. Buka terminal/PowerShell di folder proyek ini:
-   ```powershell
-   git init
-   git add .
-   git commit -m "feat: complete end-to-end machine learning pipeline and documentation"
-   git branch -M main
-   git remote add origin https://github.com/<username-kamu>/machine-learning-productivity.git
-   git push -u origin main
-   ```
-3. Link repositori GitHub dapat disalin dan dilampirkan pada form pengumpulan tugas untuk Asisten Lab dan Dosen.
-
----
-*Dibuat untuk Praktikum Machine Learning 2026.*
