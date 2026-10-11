@@ -89,6 +89,20 @@ Berdasarkan pengujian pada data testing (20% dari total data), berikut adalah pe
 
 ---
 
+## 📂 Struktur Repositori
+
+Berikut adalah susunan file terbaru yang ada di dalam repositori ini:
+
+```text
+Tugas-Machine-Learning/
+├── .gitignore                                          # Mengabaikan file cache, checkpoint, dan temporary
+├── Prediksi_Produktivitas_Mahasiswa.ipynb             # Jupyter Notebook pipeline ML lengkap & visualisasi
+├── README.md                                           # Dokumentasi proyek lengkap (Laporan & Panduan)
+└── student_productivity_distraction_dataset_20000.csv  # Dataset primer (20.000 baris sampel)
+```
+
+---
+
 ## 🎯 Kesimpulan & Insight Proyek
 
 Berdasarkan keseluruhan proses eksperimen Machine Learning mulai dari pemrosesan awal data hingga tahap evaluasi, dapat ditarik beberapa kesimpulan utama:
