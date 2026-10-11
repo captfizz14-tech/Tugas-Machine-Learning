@@ -13,8 +13,8 @@ Proyek ini disusun untuk memenuhi tugas praktikum mata kuliah **Machine Learning
 
 ## 👤 Identitas Praktikan
 * **Nama** : Muhamad Hafizd Fahreza
-* **Mata Kuliah** : Machine Learning / Praktikum Machine Learning
-* **Dosen Pengampu** : Bapak Asep
+* **Mata Kuliah** : Machine Learning
+* **Dosen Pengampu** : Asep Erlan Maulana S.kom.,M.kom
 
 ---
 
